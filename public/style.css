@@ -1,0 +1,207 @@
+/**
+ * @license
+ *
+ * Font Family: Clash Grotesk
+ * Designed by: Indian Type Foundry
+ * URL: https://www.fontshare.com/fonts/clash-grotesk
+ * © 2021 Indian Type Foundry
+ *
+ * Font Styles:
+ * Clash Grotesk Variable(Variable font)
+ * Clash Grotesk Extralight
+ * Clash Grotesk Light
+ * Clash Grotesk Regular
+ * Clash Grotesk Medium
+ * Clash Grotesk Semibold
+ * Clash Grotesk Bold
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+    font-family: 'ClashGrotesk-Variable';
+    src: url('./fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Variable.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Extralight';
+    src: url('./fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Extralight.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Light';
+    src: url('./fonts/ClashGrotesk-Light.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Light.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Regular';
+    src: url('./fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Regular.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Medium';
+    src: url('./fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Medium.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Semibold';
+    src: url('./fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Semibold.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Bold';
+    src: url('./fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+    url('./fonts/ClashGrotesk-Bold.woff') format('woff'),
+    url('./fonts/ClashGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #F9E8E8;
+    max-width: 1000px;
+    margin: 1.5rem auto auto;
+}
+body * {
+    font-family: 'ClashGrotesk-Medium', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+nav a {
+    margin-right: 15px;
+    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-size: 1.2rem;
+}
+.d-flex {
+    display: flex;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.body-content-wrapper {
+    margin-top: 4rem;
+}
+.bold {
+    font-family: 'ClashGrotesk-Bold', sans-serif;
+}
+.home-title {
+    font-size: 4rem;
+    font-family: 'ClashGrotesk-Bold', sans-serif;
+    margin-bottom: 1rem;
+}
+.home-subtitle {
+    font-size: 1.5rem;
+}
+.home-content {
+    padding-top: 10vh;
+}
+.anwsers-wrapper {
+    margin-top: 2rem;
+    padding-left: 0;
+    list-style-type: none;
+}
+.theme-title {
+    font-family: 'ClashGrotesk-Bold', sans-serif;
+}
+.question-title {
+    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0rem;
+}
+.hollow {
+    -webkit-text-stroke:1px black;
+    -webkit-text-fill-color:transparent;
+}
+.question-answer {
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+}
+.question-wrapper {
+    margin-bottom: 2rem;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+footer a {
+    font-family: 'ClashGrotesk-Semibold', sans-serif;
+}
+.go-deeper {
+    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.question-links a {
+    text-decoration: underline;
+}
+.theme-links a:last-child {
+    margin-right: 0;
+}
+a {
+    border: 0;
+    background: linear-gradient(to right, #b6b6b6 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+a:hover {
+    background-position: left bottom;
+}
