@@ -298,3 +298,7 @@ a {
 a:hover {
     background-position: -99.99% 0;
 }
+
+.emoji {
+    margin: -4px 0;
+}
