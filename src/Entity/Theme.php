@@ -29,6 +29,11 @@ class Theme
      */
     private $questions;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $content;
+
     public function __construct()
     {
         $this->questions = new ArrayCollection();
@@ -77,6 +82,18 @@ class Theme
                 $question->setTheme(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(?string $content): self
+    {
+        $this->content = $content;
 
         return $this;
     }
