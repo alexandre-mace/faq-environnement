@@ -7,26 +7,42 @@
 <div class="example-wrapper">
     <h1 class="theme-title">{{ theme.title }}</h1>
 
-    <ul class="anwsers-wrapper">
-        {% for question in theme.questions %}
-            <li class="question-wrapper">
-                <h2 class="question-title">{{ question.title }}</h2>
-                <p class="question-answer">{{ question.answer }}</p>
-                <div class="question-links">
-                    <div class="go-deeper">Liens pour approfondir</div>
-                    {% for link in question.links %}
-                        <div><a href="{{ link }}">{{ link }}</a></div>
-                    {% endfor %}
-                </div>
-            </li>
-        {% endfor %}
-    </ul>
+{#    <ul class="anwsers-wrapper">#}
+{#        {% for question in theme.questions %}#}
+{#            <li class="question-wrapper">#}
+{#                <h2 class="question-title">{{ question.title }}</h2>#}
+{#                <p class="question-answer">{{ question.answer }}</p>#}
+{#                <div class="question-links">#}
+{#                    <div class="go-deeper">Liens pour approfondir</div>#}
+{#                    {% for link in question.links %}#}
+{#                        <div><a href="{{ link }}">{{ link }}</a></div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            </li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
 
-{#    {% if theme.content is not null %}#}
-{#        <div class="markdown-wrapper">#}
-{#            {{ theme.content|markdown_to_html }}#}
-{#        </div>#}
-{#    {% endif %}#}
+    {% if theme.content is not null %}
+        <ul id="summary">
+        </ul>
+        <div class="markdown-wrapper">
+            {{ theme.content|markdown_to_html }}
+        </div>
+    {% endif %}
 
+    <script>
+        const questions = document.getElementsByTagName('h2');
+        const summary = document.getElementById('summary');
+
+        Array.from(questions).forEach((question, index) => {
+            question.id = index;
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.innerText = question.innerText;
+            a.href = '#' + index;
+            li.appendChild(a);
+            summary.appendChild(li);
+        })
+    </script>
 </div>
 {% endblock %}

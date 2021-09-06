@@ -104,27 +104,223 @@
     font-display: swap;
     font-style: normal;
 }
+
+
+/**
+ * @license
+ *
+ * Font Family: Tabular
+ * Designed by: Jérémie Hornus, Julie Soudanne
+ * URL: https://www.fontshare.com/fonts/tabular
+ * © 2021 Indian Type Foundry
+ *
+ * Font Styles:
+ * Tabular Variable(Variable font)
+ * Tabular Variable Italic(Variable font)
+ * Tabular Light
+ * Tabular Light Italic
+ * Tabular Regular
+ * Tabular Italic
+ * Tabular Medium
+ * Tabular Medium Italic
+ * Tabular Semibold
+ * Tabular Semibold Italic
+ * Tabular Bold
+ * Tabular Bold Italic
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 700.0)
+
+*/
+
+@font-face {
+    font-family: 'Tabular-Variable';
+    src: url('/fonts/Tabular-Variable.woff2') format('woff2'),
+    url('/fonts/Tabular-Variable.woff') format('woff'),
+    url('/fonts/Tabular-Variable.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 700.0)
+
+*/
+
+@font-face {
+    font-family: 'Tabular-VariableItalic';
+    src: url('/fonts/Tabular-VariableItalic.woff2') format('woff2'),
+    url('/fonts/Tabular-VariableItalic.woff') format('woff'),
+    url('/fonts/Tabular-VariableItalic.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Tabular-Light';
+    src: url('/fonts/Tabular-Light.woff2') format('woff2'),
+    url('/fonts/Tabular-Light.woff') format('woff'),
+    url('/fonts/Tabular-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tabular-LightItalic';
+    src: url('/fonts/Tabular-LightItalic.woff2') format('woff2'),
+    url('/fonts/Tabular-LightItalic.woff') format('woff'),
+    url('/fonts/Tabular-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Tabular-Regular';
+    src: url('/fonts/Tabular-Regular.woff2') format('woff2'),
+    url('/fonts/Tabular-Regular.woff') format('woff'),
+    url('/fonts/Tabular-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tabular-Italic';
+    src: url('/fonts/Tabular-Italic.woff2') format('woff2'),
+    url('/fonts/Tabular-Italic.woff') format('woff'),
+    url('/fonts/Tabular-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Tabular-Medium';
+    src: url('/fonts/Tabular-Medium.woff2') format('woff2'),
+    url('/fonts/Tabular-Medium.woff') format('woff'),
+    url('/fonts/Tabular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tabular-MediumItalic';
+    src: url('/fonts/Tabular-MediumItalic.woff2') format('woff2'),
+    url('/fonts/Tabular-MediumItalic.woff') format('woff'),
+    url('/fonts/Tabular-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Tabular-Semibold';
+    src: url('/fonts/Tabular-Semibold.woff2') format('woff2'),
+    url('/fonts/Tabular-Semibold.woff') format('woff'),
+    url('/fonts/Tabular-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tabular-SemiboldItalic';
+    src: url('/fonts/Tabular-SemiboldItalic.woff2') format('woff2'),
+    url('/fonts/Tabular-SemiboldItalic.woff') format('woff'),
+    url('/fonts/Tabular-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Tabular-Bold';
+    src: url('/fonts/Tabular-Bold.woff2') format('woff2'),
+    url('/fonts/Tabular-Bold.woff') format('woff'),
+    url('/fonts/Tabular-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tabular-BoldItalic';
+    src: url('/fonts/Tabular-BoldItalic.woff2') format('woff2'),
+    url('/fonts/Tabular-BoldItalic.woff') format('woff'),
+    url('/fonts/Tabular-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-color: #F9E8E8;
+
+    background: radial-gradient(circle at left top, #f2f2f2 , #e8d8d8);
+    /* The image used */
+    /*background-image: url("./bg3.png");*/
+    /*height: 100%;*/
+
+    /*!* Center and scale the image nicely *!*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
     max-width: 1200px;
     margin: 1.5rem auto auto;
     display: flex;
     flex-direction: column;
-    height: 100%;
     min-height: calc(100vh - 1.5rem);
 }
 @media (max-width: 960px) {
     body {
         margin: 1rem;
-        min-height: calc(100vh - 1rem);
+        min-height: calc(100vh - 2rem);
     }
 }
 
+img {
+    border-radius: 10px;
+}
+
 body * {
-    font-family: 'ClashGrotesk-Medium', sans-serif;
+    font-family: 'Tabular-Medium', sans-serif;
 }
 a {
     text-decoration: none;
@@ -132,7 +328,7 @@ a {
 }
 nav a {
     margin-right: 15px;
-    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-family: 'Tabular-Bold', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -145,7 +341,7 @@ nav a {
         display: flex;flex-direction: column;
     }
     nav a {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 .d-flex {
@@ -163,11 +359,11 @@ nav a {
     }
 }
 .bold {
-    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-family: 'Tabular-Bold', sans-serif;
 }
 .home-title {
     font-size: calc(35px + 2vw);
-    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-family: 'Tabular-Bold', sans-serif;
     margin-bottom: 0;
 }
 @media (max-width: 960px) {
@@ -177,7 +373,7 @@ nav a {
 }
 @media (max-width: 335px) {
     .home-title {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 }
 .home-title-bigger-part {
@@ -185,7 +381,7 @@ nav a {
 }
 @media (max-width: 960px) {
     .home-title-bigger-part {
-        font-size: calc(110px + 3vw);
+        font-size: calc(90px + 3vw);
     }
     .home-subtitle-spacing {
         margin-top: 1rem;
@@ -218,8 +414,8 @@ nav a {
 }
 @media (max-width: 335px) {
     .home-subtitle {
-        font-size: 1.4rem;
-        margin-top: 1rem;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
     }
 }
 .anwsers-wrapper {
@@ -235,7 +431,7 @@ nav a {
     }
 }
 .theme-title {
-    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-family: 'Tabular-Bold', sans-serif;
     font-size: 2.7rem;
     text-transform: uppercase;
 }
@@ -256,7 +452,7 @@ nav a {
     margin-bottom: 0;
 }
 .hollow {
-    -webkit-text-stroke:1px black;
+    -webkit-text-stroke: 3px black;
     -webkit-text-fill-color:transparent;
 }
 .question-answer {
@@ -275,10 +471,10 @@ footer {
     height: 50px;
 }
 footer a {
-    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-family: 'Tabular-Semibold', sans-serif;
 }
 .go-deeper {
-    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-family: 'Tabular-Semibold', sans-serif;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
@@ -300,7 +496,8 @@ a:hover {
 }
 
 .emoji {
-    margin: -4px 0;
+    margin: -3px -3px;
+    border-radius: 0;
 }
 
 .markdown-wrapper img {
@@ -311,7 +508,7 @@ a:hover {
     display: flex;
 }
 .markdown-wrapper h2 {
-    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-family: 'Tabular-Bold', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 0;
 }
@@ -320,12 +517,29 @@ a:hover {
 }
 .markdown-wrapper p {
     font-size: 1.3rem;
+    line-height: 1.7;
 }
 .markdown-wrapper h3 {
-    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-family: 'Tabular-Bold', sans-serif;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 .markdown-wrapper a {
     text-decoration: underline;
+}
+
+#summary {
+    margin-bottom: 3rem;
+}
+#summary li {
+    list-style-type: none;
+}
+#summary li a {
+    font-family: 'Tabular-Bold', sans-serif;
+    font-size: 1.1rem;
+}
+#summary li:before {
+    content: "# ";
+    color: rgba(145, 144, 144, 0.56);
+    font-size: 1.3rem;
 }
