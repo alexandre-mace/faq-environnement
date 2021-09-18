@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="FAQ de l'environnement - CLIMAT ÉNERGIE BIODIVERSITÉ INJUSTICE CONQÉQUENCES" />
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/samsung/306/green-book_1f4d7.png">
         <title>{% block title %}FAQ de l'environnement{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
@@ -27,9 +28,9 @@
             </div>
         </nav>
     </header>
-        <div class="body-content-wrapper">
-            {% block body %}{% endblock %}
-        </div>
+    <div class="body-content-wrapper {% if app.request.attributes.get('_route') == 'home' %}home-content-wrapper{% endif %}">
+        {% block body %}{% endblock %}
+    </div>
     <footer>
         <p>made with love by <a href="https://github.com/alexandre-mace">@alexandre-mace</a></p>
     </footer>
